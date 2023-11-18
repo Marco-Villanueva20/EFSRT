@@ -9,23 +9,23 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="/style/estilos.css">
+  <link rel="stylesheet" type="text/css" href="../style/estilos.css">
 </head>
 
 <body>
   <div class="container-fluid">
-    <header class="container-fluid">
-      <h1>Comparación de Productos de Nestlé</h1>
+    <header class="container">
+      <h1 class="col-12">Comparación de Productos de Nestlé</h1>
     </header>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="productos.html">Productos</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <ul class="navbar-nav">
+        <li class="nav-item active " ><a class="navbar-brand" href="../index.html">Inicio</a></li>
+        <li class="nav-item active " ><a class="navbar-brand" href="productos.html">Productos</a></li>
       </ul>
     </nav>
     <main>
       <h2>Selecciona los productos que deseas comparar:</h2>
-      <form id="form-comparacion">
+      <form id="form-comparacion" class="col-12 mb-4 mt-3">
         <select id="producto1">
           <!-- Aquí es donde irán las opciones de los productos -->
           <option value="producto1">Producto 1</option>
@@ -36,13 +36,30 @@
           <!-- Aquí es donde irán las opciones de los productos -->
           <option value="producto1">Producto 1</option>
           <option value="producto2">Producto 2</option>
-          <!-- Añade más opciones según sea necesario -->
+          <!-- Añadire más opciones según sea necesario -->
         </select>
         <button type="submit">Comparar</button>
       </form>
       <div id="resultado-comparacion">
-        <!-- Aquí es donde irán los resultados de la comparación -->
-      </div>
+        <table class="table table-striped table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th class="col-6">Producto 1</th>
+                    <th class="col-6">Producto 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="col-6">Información nutricional del Producto 1</td>
+                    <td class="col-6">Información nutricional del Producto 2</td>
+                </tr>
+                <tr>
+                    <td class="col-6">Imagen del producto 1</td>
+                    <td class="col-6">Imagen del producto 2</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
     </main>
     <footer>
       <p>Proyecto desarrollado por Marco Antonio Villanueva Soto</p>
