@@ -10,32 +10,42 @@
     <link rel="stylesheet" type="text/css" href="../style/estilos.css">
 </head>
 <body>
-    <header>
-        <h1>Productos de Nestlé</h1>
-    </header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <ul class="navbar-nav">
-            <li class="nav-item active "><a class="navbar-brand" href="../index.html">Inicio</a></li>
-            <li class="nav-item active "> <a class="navbar-brand" href="html/comparacion.html">Comparar Productos</a></li>
-        </ul>
-    </nav>
-    <main>
-        <!-- Aquí es donde irán las "cajas" de los productos -->
-        <div class="producto">
-            <h2>Nombre del Producto 1</h2>
-            <img src="ruta/a/la/imagen/del/producto1.jpg" alt="Imagen del Producto 1">
-            <p><a href="producto.html">Ver detalles</a></p>
-        </div>
-        <div class="producto">
-            <h2>Nombre del Producto 2</h2>
-            <img src="ruta/a/la/imagen/del/producto2.jpg" alt="Imagen del Producto 2">
-            <p><a href="producto.html">Ver detalles</a></p>
-        </div>
-        <!-- Añade más productos según sea necesario -->
-    </main>
-    <footer>
-        <p>Proyecto desarrollado por Marco Antonio Villanueva Soto</p>
-    </footer>
+    <div class="container-fluid">
+        <header>
+            <h1 class="col-12">Productos de Nestlé</h1>
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link active" href="productos.html">Productos</a></li>
+                <li class="nav-item"> <a class="nav-link" href="comparacion.html">Comparar Productos</a></li>
+            </ul>
+        </nav>
+        <main>
+            <!-- Aquí es donde irán las "cajas" de los productos -->
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="ruta/a/la/imagen/del/producto1.jpg" alt="Imagen del Producto 1">
+                <div class="card-body">
+                    <h2 class="card-title">Nombre del Producto 1</h2>
+                    <p>Algún texto de ejemplo, algún texto de ejemplo. John Doe es arquitecto e ingeniero</p>
+                    <a href="producto.html">Ver detalles</a>
+                </div>
+            </div>
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="ruta/a/la/imagen/del/producto2.jpg" alt="Imagen del Producto 2">
+                <div class="card-body">
+                    <h2 class="card-title">Nombre del Producto 2</h2>
+                    <p></p>
+                    <a href="producto.html">Ver detalles</a>
+                </div>
+            </div>
+            <!-- Añade más productos según sea necesario -->
+        </main>
+        <footer>
+            <p>Proyecto desarrollado por Marco Antonio Villanueva Soto</p>
+        </footer>
+    </div>
+    
     <script src="../js/script.js"></script>
 </body>
 </html>
