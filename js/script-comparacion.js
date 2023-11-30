@@ -311,14 +311,14 @@ formComparacion.addEventListener("submit", function(e) {
         // Muestra la información de los productos en la tabla
         const resultadoComparacion = document.querySelector("#resultado-comparacion");
         resultadoComparacion.innerHTML = `
-        <table class="table table-striped table-bordered table-hover" id="tabla-comparacion">
-        <thead class="table-success">
+        <table class="table table-striped table-bordered table-hover col-12" id="tabla-comparacion">
+        <thead class="table-success col-12">
             <tr>
                 <td class="col-6">${producto1.nombre}</td>
                 <td class="col-6">${producto2.nombre}</td>
             </tr>
         </thead>
-        <tbody>
+        <tbody class="col-12">
             <tr >
                 <td class="col-6"><img class="card-img-top"  src="${producto1.imagen}" alt="${producto1.nombre}"></td>
                 <td class="col-6"><img class="card-img-top"  src="${producto2.imagen}" alt="${producto2.nombre}"></td>
