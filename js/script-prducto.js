@@ -256,7 +256,7 @@ function cargarProducto(id) {
         div.classList.add("producto");
         div.innerHTML =
             `
-                <img class="card-img-top col-12" src="${producto.imagen}" alt="${producto.nombre}">
+                <img class="card-img-top col-12" style="width:400px" src="${producto.imagen}" alt="${producto.nombre}">
                 <div class="card-body col-12 ">
                     <h2 class="card-title">${producto.nombre}</h2>
                     <p>${producto.descripcion}</p>
