@@ -320,8 +320,8 @@ formComparacion.addEventListener("submit", function(e) {
         </thead>
         <tbody>
             <tr >
-                <td class="col-6"><img class="card-img-top" style="width:400px" src="${producto1.imagen}" alt="${producto1.nombre}"></td>
-                <td class="col-6"><img class="card-img-top" style="width:400px" src="${producto2.imagen}" alt="${producto2.nombre}"></td>
+                <td class="col-6"><img class="card-img-top"  src="${producto1.imagen}" alt="${producto1.nombre}"></td>
+                <td class="col-6"><img class="card-img-top"  src="${producto2.imagen}" alt="${producto2.nombre}"></td>
             </tr>
             <tr>
                 <td class="col-6">Valor Energetico(Kcal): ${producto1.energia}</td>
