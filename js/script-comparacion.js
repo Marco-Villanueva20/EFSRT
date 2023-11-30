@@ -314,14 +314,14 @@ formComparacion.addEventListener("submit", function(e) {
         <table class="table table-striped table-bordered table-hover col-12" id="tabla-comparacion">
         <thead class="table-success col-12">
             <tr>
-                <td class="col-6">${producto1.nombre}</td>
+                <td class="col-6 col-sm-6">${producto1.nombre}</td>
                 <td class="col-6">${producto2.nombre}</td>
             </tr>
         </thead>
         <tbody class="col-12">
             <tr >
-                <td class="col-6"><img class="card-img-top"  src="${producto1.imagen}" alt="${producto1.nombre}"></td>
-                <td class="col-6"><img class="card-img-top"  src="${producto2.imagen}" alt="${producto2.nombre}"></td>
+                <td class="col-6"><img class="card-img-top rounded"  src="${producto1.imagen}" alt="${producto1.nombre}"></td>
+                <td class="col-6"><img class="card-img-top rounded"  src="${producto2.imagen}" alt="${producto2.nombre}"></td>
             </tr>
             <tr>
                 <td class="col-6">Valor Energetico(Kcal): ${producto1.energia}</td>

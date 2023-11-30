@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+<head class="text-center">
   <title>Comparación de Productos - Nestlé</title>
   <!--boostrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -37,27 +37,27 @@
     <main>
       <h2>Selecciona los productos que deseas comparar:</h2>
       <form id="form-comparacion" class="col-12 mb-4 mt-3">
-        <select id="producto1">
+        <select id="producto1" class="form-select form-select-sm form-select-lg mt-5">
           <!-- Aquí es donde irán las opciones de los productos -->
           <option value="Texto Ayuda">Seleccione un producto</option>
           <!-- Añade más opciones según sea necesario -->
         </select>
 
-        <select id="producto2">
+        <select id="producto2" class="form-select form-select-sm form-select-lg mt-5">
           <!-- Aquí es donde irán las opciones de los productos -->
           <option value="Texto Ayuda">Seleccione un producto</option>
           <!-- Añadire más opciones según sea necesario -->
         </select>
 
-        <button type="submit" class="btn btn-secondary">Comparar</button>
+        <button type="submit" class="btn btn-secondary mt-5">Comparar</button>
       </form>
       <div id="resultado-comparacion" class="col-12">
           <!---->
-          <p id="mensaje">Seleccione los productos a comparar</p>
+          <p id="mensaje" class="text-center">Seleccione los productos a comparar</p>
 
       </div>
     </main>
-    <footer>
+    <footer class="col-12">
       <p>Proyecto desarrollado por Marco Antonio Villanueva Soto</p>
     </footer>
   </div>
