@@ -13,12 +13,11 @@
 </head>
 
 <body>
-  <div class="container">
-    <header class="col-12">
+  <div class="container text-center bg-light">
+    <header class="col-12 pt-3  pb-3">
       <h1 >Comparación de Productos de Nestlé</h1>
-      <br><br>
     </header>
-    <nav class="navbar navbar-expand-lg navbar-expand-sm navbar-light bg-light justify-content-center">
+    <nav class="navbar navbar-expand-lg navbar-expand-sm navbar-light  justify-content-center ">
 
       <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,7 +33,7 @@
     </ul>
     </nav>
 
-    <main>
+    <main class="p-5">
       <h2>Selecciona los productos que deseas comparar:</h2>
       <form id="form-comparacion" class="col-12 mb-4 mt-3">
         <select id="producto1" class="form-select form-select-sm form-select-lg mt-5">
@@ -49,7 +48,9 @@
           <!-- Añadire más opciones según sea necesario -->
         </select>
 
-        <button type="submit" class="btn btn-secondary mt-5">Comparar</button>
+        <div class="text-end">
+          <button type="submit" class="btn btn-secondary mt-5">Comparar</button>
+        </div>
       </form>
       <div id="resultado-comparacion" class="col-12">
           <!---->
